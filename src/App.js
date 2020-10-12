@@ -3,6 +3,7 @@ import BaseHook from "./Hooks/BaseHook";
 import {UseStateHook,ComputeState} from "./Hooks/UseStateHook";
 import { UseReducerHook } from "./Hooks/UseReducerHook";
 import UseEffectHook from "./Hooks/UseEffectHook";
+import UseRefHook from "./Hooks/UseRefHook";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       {/* <UseStateHook /> */}
       {/* <ComputeState /> */}
       {/* <UseReducerHook /> */}
-      <UseEffectHook />
+      {/* <UseEffectHook /> */}
+      <UseRefHook />
     </div>
   );
 }

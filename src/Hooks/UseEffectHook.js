@@ -1,4 +1,4 @@
-import React,{useState,useEffect,useCallback} from 'react';
+import React,{useState,useEffect,useCallback,useMemo} from 'react';
 
 
 const Person = ({ fetchData }) => {
@@ -33,6 +33,10 @@ function UseEffectHook(){
     const fetchData = useCallback(()=>{
        return fetch(`https://v1/api/people/${personId}/`);
     },[personId]);
+    
+  //   const fetchData = useMemo(()=>{
+  //     return ()=>fetch(`https://v1/api/people/${personId}/`);
+  //  },[personId]);
 
     return (
         <>
