@@ -4,6 +4,10 @@ import {UseStateHook,ComputeState} from "./Hooks/UseStateHook";
 import { UseReducerHook } from "./Hooks/UseReducerHook";
 import UseEffectHook from "./Hooks/UseEffectHook";
 import UseRefHook from "./Hooks/UseRefHook";
+import CustomHook from "./Hooks/CustomHook";
+import AHooks from "./Hooks/AHooks";
+import DebounceHook from "./Hooks/DebounceHook";
+import ThrottleHook from "./Hooks/ThrottleHook";
 
 function App() {
   return (
@@ -13,7 +17,11 @@ function App() {
       {/* <ComputeState /> */}
       {/* <UseReducerHook /> */}
       {/* <UseEffectHook /> */}
-      <UseRefHook />
+      {/* <UseRefHook /> */}
+      {/* <CustomHook /> */}
+      {/* <AHooks /> */}
+      {/* <DebounceHook /> */}
+      <ThrottleHook />
     </div>
   );
 }
